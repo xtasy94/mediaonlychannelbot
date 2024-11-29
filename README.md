@@ -1,15 +1,56 @@
-# mediaonlychannelbot
-Simple bot code that makes mentioned channel media only by deleting messages with 0 attachments. 
+# Media-Only Channel Bot
 
+A Discord bot that enforces media-only content in a designated channel by automatically removing text-only messages.
 
+## Overview
 
+This Discord bot monitors a specified channel and deletes messages without attachments, ensuring the channel remains dedicated to media sharing.
 
-How to configure the settings. 
+## Features
 
-Step 1: Open index.js file, put channel ID in line 11. 
+- Automatic removal of text-only messages
+- Channel-specific filtering
+- Configurable and easy to deploy
 
-Step 2: In the same file, put your bot token in the last line. 
+## Prerequisites
 
-Step 3: `npm i discord.js` 
+- Node.js (v16.9.0+)
+- Discord Bot Token
+- Administrative access to a Discord server
 
-Step 4: `node index.js` 
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/xtasy94/mediaonlychannelbot.git
+   cd mediaonlychannelbot
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install discord.js
+   ```
+
+## Configuration
+
+1. Open `index.js`
+2. Replace `'your-channel-id'` with the target channel's ID
+3. Replace `'your-bot-token'` with your Discord bot token
+
+### Obtaining Credentials
+
+- **Channel ID**: Right-click the channel (Developer Mode enabled) and select "Copy Channel ID"
+- **Bot Token**: [Discord Developer Portal](https://discord.com/developers/applications) > Your Application > Bot > Copy Token
+
+## Deployment
+
+```bash
+node index.js
+```
+
+## Bot Permissions
+
+Ensure the bot has:
+- Read Messages
+- Send Messages
+- Manage Messages
